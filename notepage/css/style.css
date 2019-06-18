@@ -1,0 +1,212 @@
+body{
+  background-color: #66b3ff;
+  margin: auto;
+}
+
+textarea{
+  resize: none;
+}
+
+.hidden{
+      display:none;
+}
+
+.oval {
+  width: 180px;
+  height: 74px;
+  background: #000099;
+  border-radius: 50%;
+  margin: 20px 120px;
+  box-shadow: 4px 4px 4px #000000;
+  transform: rotate(-18deg);
+  z-index: -1;
+}
+
+.logo{
+  color: white;
+  font-family: sans-serif;
+  font-size: 27px;
+  //text-align: center;
+  margin: -100px 142px;
+  vertical-align: middle;
+  line-height: 90px;
+  
+}
+
+.header-title{
+  font-family: Arial;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 30px 310px;
+}
+
+.header{
+  font-family: Arial;
+  margin: 10px 120px;
+  color: white;
+  text-shadow: blue; 
+}
+
+.text-boxes{
+  //background-color: red;
+  margin: 10px 20px;
+}
+
+.caller{
+  margin: -10px 80px;
+  color:white;
+  font-family: Arial;
+  background-color: black;
+  width: 164px;
+  border-radius: 5px;
+}
+
+.boxes{
+  margin: 10px 80px;
+  height: 260px;
+  width: 900px;
+  //background-color: red;
+}
+
+.left-textbox, .right-textbox{
+    border: 3px solid black;
+    height: 250px;
+    width: 400px;
+    float: left;
+}
+
+.left-textbox{
+  margin: 0px 20px;
+}
+
+.buttons{
+  height: 40px;
+  margin: -45px 80px;
+  //background-color: black;
+}
+
+.btn {
+    border: none;
+    background-color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.user{
+  color: black;
+}
+
+.buttons{
+  margin: -40px 80px;
+}
+
+.text-button{
+  border: 2px solid black;
+  background-color: light-grey;
+  color: black;
+  width: 110px;
+  //margin: 5px 0px;
+  border-radius: 10%;
+  padding: 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.text-button:hover{
+  background-color: black;
+  color: white;
+}
+
+.text-button2{
+  border: 2px solid black;
+  background-color: light-grey;
+  color: black;
+  width: 60px;
+  //margin: 5px 0px;
+  border-radius: 10%;
+  padding: 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.text-button2:hover{
+  background-color: black;
+  color: white;
+}
+
+#cus{
+  background-color: white;
+  color: black;
+}
+
+#store{
+  background-color: grey;
+  color: black;
+}
+
+.textlines{
+  margin: 45px 100px;
+  padding: 25px;
+  background-color: white;
+  height: 160px;
+  width: 500px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.case-btn{
+  border: 2px solid #008ae6;
+  background-color: white;
+  color:#008ae6;
+  width: 90px;
+  margin:5px 3.1px;
+  border-radius: 10%;
+  padding: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.case-btn2{
+  border: 2px solid #008ae6;
+  background-color: white;
+  color:#008ae6;
+  width: 80px;
+  border-radius: 10%;
+  padding: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.case-btn:hover{
+  background-color: #008ae6;
+  color: white;
+}
+
+.case-btn2:hover{
+  background-color: #008ae6;
+  color: white;
+}
+
+#ncp{
+  color: black;
+  display: none;
+}
+
+#numbers{
+  font-family: Arial;
+  font-size: 14px;
+  padding: 5px;
+  line-height: .4em;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background-color: #152f77;
+}

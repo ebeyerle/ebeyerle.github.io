@@ -1,0 +1,200 @@
+<html>
+<head>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="javascript/samsung.js" type="text/javascript"></script>
+
+  <title>Samsung Notepage</title>
+</head>
+<body>
+  <div class="oval">  
+  </div>
+  
+  <p class="logo"><strong>SAMSUNG</strong></p>
+  
+  <h1 class="header-title"><strong>Dealer Support Notepage</strong></h1>
+
+  <br><br><br><br>
+  
+  <div class="text-boxes">
+  <div class="caller">
+    Caller:<br>
+    <button id="cus" class="btn" onclick="isCustomer()">Customer</button>
+    <button id="store" class="btn" onclick="isStore()">Home Depot</button>
+  </div>
+  
+  <div class="boxes">
+    <textarea rows="18" cols="50" id="textInput" class="right-textbox">1. Inquiry: 
+2. Resources used: 
+3. Steps taken: 
+4. Additional comments/Requirements: n/a
+5. Outcome: 
+6. Language: (DR Only)
+7. Symptom Description: None
+8. NCP Parts Needed: None
+Issue: 
+Action Taken: 
+Additional Notes: n/a
+Original DOP: XX/XX/XX
+Original PO: 
+Policy Type: 
+Empowerment Policy#: n/a</textarea>
+
+  <textarea rows="18" cols="50" id="textInput-right" class="left-textbox"></textarea>  
+  </div> 
+  <textarea rows="18" cols="50" class="hidden" id="storetext">Caller: 
+Store#: 
+</textarea>
+  
+  <textarea rows="18" cols="50" class="hidden" id="space-area">
+
+
+
+</textarea>
+
+  <textarea rows="1" cols="50" class="hidden" id="original">1. Inquiry: 
+2. Resources used: 
+3. Steps taken: 
+4. Additional comments/Requirements: n/a
+5. Outcome: 
+6. Language: (DR Only)
+7. Symptom Description: None
+8. NCP Parts Needed: None
+Issue: 
+Action Taken: 
+Additional Notes: n/a
+Original DOP: XX/XX/XX
+Original PO: 
+Policy Type: 
+Empowerment Policy#: n/a</textarea>
+  
+  <div class="buttons">
+    <br><br>
+    <button class="text-button" onclick="myFunction1()">Add To Clipboard</button>
+    <button class="text-button2" onclick="reset()">Reset</button>
+    <button class="text-button2" onclick="move()">Move</button>
+  </div>  
+  </div>
+  <br><br><br><br><br>
+
+  <h1 class="header">Special Cases</h1>
+ 
+  <div class="textlines" id="issues">
+    <!--
+    <p>Did CX refuse troubleshooting?</p>
+    <button onclick="troubleshoot(0)">Yes</button>
+    <br>
+    <p>Does CX have an extended Warranty?</p>
+    <button onclick="extended()">Yes</button>
+    <br>
+    <p>Are they just wanting service center information?</p>
+    <button onclick="service()">Yes</button>
+    -->
+    <select name="case" style="width: 400px;" size="8" id="case">
+      <option>General Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="0">The customer refused troubleshooing</option>
+      <option value="1">Caller has an extended warranty</option>
+      <option value="2">Caller wanted to know the status of a repair</option>
+      <option value="3">Caller wanted to know the status of an accommodation</option>
+      <option value="4">The customer has a question about a Samsung appliance</option>
+      <option value="5">Caller called into the wrong department</option>
+      <option value="6">Caller calling in about a rebate</option>
+      <option value="7">Product Registration</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option>Fridge Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="8">Ice Maker Not Working</option>
+      <option value="9">No Cool(Fridge)</option>
+      <option value="10">No Cool(Freezer)</option>
+      <option value="11">Ice Maker/Bucket Frozen Over</option>
+      <option value="12">Water/Ice in Vegetable Drawers</option>
+      <option value="13">Handle Loose/Fell Off</option>
+      <option value="14">Making Sounds-Humming</option>
+      <option value="15">Making Sounds-Rattling</option>
+      <option value="16">Uneven Doors</option>
+      <option value="17">Fridge Installation</option>
+      <option value="18">Damaged Fridge(Recently Delivered)</option>
+      <option value="NCP1">NCP-Fridge Part Needed</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option>Range Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="19">No Heat(Oven)</option>
+      <option value="20">Burner(s) Not Working</option>
+      <option value="21">Gas Smell</option>
+      <option value="22">Cracked Cooktop</option>
+      <option value="23">Error Code</option>
+      <option value="24">Oven Door Locked</option>
+      <option value="25">Residue in Door</option>
+      <option value="26">Convection Fan is Loud</option>
+      <option value="27">Cooktop Burner Not Heating(Electric)</option>
+      <option value="NCP2">NCP-Range Part Needed</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option>Washer Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="28">Error Code-UE</option>
+      <option value="29">No Drain</option>
+      <option value="30">Not Filling Error</option>
+      <option value="31">Excessive Suds Error</option>
+      <option value="32">Water Leak-Underneath</option>
+      <option value="33">Water Leak- Door</option>
+      <option Value="34">Not Spinning Enough</option>
+      <option value="35">Stains Appearing on Clothes After Cycle</option>
+      <option value="NCP3">NCP-Washer Part Needed</option>
+     <option>-----------------------------------------------------------------------------</option>
+      <option>Dryer Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="36">No Heat</option>
+      <option value="37">Drum Not Spinning</option>
+      <option value="38">Dryer Smokes/Smells</option>
+      <option value="NCP4">NCP-Dryer Part Needed</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option>Dishwasher Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="39">Dishes Not Drying</option>
+      <option value="40">Leakage Error-LC Error Code</option>
+      <option value="41">Water Will Not Drain</option>
+      <option value="42">Dishes Not Getting Clean</option>
+      <option value="43">Buzzing and/or Grinding Sounds</option>
+      <option value="44">No Power</option>
+      <option value="NCP5">NCP-Dishwasher Part Needed</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option>Microwave Issue</option>
+      <option>-----------------------------------------------------------------------------</option>
+      <option value="NCP6">NCP-Microwave</option>
+    </select>
+    <button class="case-btn" onclick="selected()">Select</button>
+    <div id="ncp">
+      <p style="font-family:Arial">Select NCP Part:</p>
+      <select name="ncp" id="partList">
+      </select>
+      <select id="count">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <select id="reason">
+        <option value="D">Defective</option>
+        <option value="M">Missing</option>
+      </select>
+      <button class="case-btn2" onclick="showPart()">Add Part</button>
+    </div>
+  </div>
+
+  <br>
+  
+  <h1 class="header">Phone Numbers</h1>
+
+  <div class="textlines" id="numbers">
+    <p>Our Number: 1(877)946-9843 option 5, then 4</p>
+    <p>Customer Care: 1(800)466-3337</p>
+    <p>Samsung Business Center: 1(855)681-6917 option 2, 2, then 3</p>
+    <p>Home Depot Protection Plan: 1(855)844-3377</p>
+    <p>GE(Delivery Team): 1(866)622-6243</p>
+    <p>J and J Parts: 1(800)627-4368</p>
+  </div>
+</body>
+<footer>Created By: Evan Beyerle-v1.0-7/5/2018</footer>
+</html>
